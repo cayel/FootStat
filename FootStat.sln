@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootStatSeed", "FootStatSeed\FootStatSeed.csproj", "{CDFBAF26-D621-4F84-ACF6-C00276310262}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{A83B81AB-FECD-4E76-B96D-D85C3D490CA7}"
+	ProjectSection(SolutionItems) = preProject
+		Datas\display-db.sql = Datas\display-db.sql
+		Datas\init-db.sql = Datas\init-db.sql
+		Datas\ligue1-94.csv = Datas\ligue1-94.csv
+		Datas\ligue1-95.csv = Datas\ligue1-95.csv
+		Datas\raz-db.sql = Datas\raz-db.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootStat.Api", "FootStat.Api\FootStat.Api.csproj", "{7ED2629A-14C4-40CB-8C34-05B5F6A16BEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootStat.Core", "FootStat.Core\FootStat.Core.csproj", "{9EF7D9D9-5F09-4277-97B3-919A5C5C15DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{8A5F7350-351C-4E4D-B05B-89E7B8CC88A6}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\readme.md = Documents\readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FFE1674F-6606-4AAD-BC25-075F24AA618D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDFBAF26-D621-4F84-ACF6-C00276310262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDFBAF26-D621-4F84-ACF6-C00276310262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDFBAF26-D621-4F84-ACF6-C00276310262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDFBAF26-D621-4F84-ACF6-C00276310262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED2629A-14C4-40CB-8C34-05B5F6A16BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED2629A-14C4-40CB-8C34-05B5F6A16BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED2629A-14C4-40CB-8C34-05B5F6A16BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED2629A-14C4-40CB-8C34-05B5F6A16BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF7D9D9-5F09-4277-97B3-919A5C5C15DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF7D9D9-5F09-4277-97B3-919A5C5C15DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF7D9D9-5F09-4277-97B3-919A5C5C15DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF7D9D9-5F09-4277-97B3-919A5C5C15DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89A6190B-50E3-42E4-9D92-458E4AFF4558}
+	EndGlobalSection
+EndGlobal
