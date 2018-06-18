@@ -13,10 +13,16 @@ namespace FootStat.Api.Controllers
     [Route("graphql")]
     public class GraphQLController : Controller
     {
+        private CompetitionQuery _competitionQuery { get; set; }
+
+        public GraphQLController(CompetitionQuery competitionQuery)
+        {
+            _competitionQuery = competitionQuery;
+        }
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] GraphQLQuery query)
         {
-            var schema = new Schema { Query = new CompetitionQuery(new CompetitionRepository()) };
+            var schema = new Schema { Query = _competitionQuery };
 
             var result = await new DocumentExecuter().ExecuteAsync(_ =>
             {
