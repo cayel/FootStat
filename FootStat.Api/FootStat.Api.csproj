@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FootStat.Core\FootStat.Core.csproj" />
+    <ProjectReference Include="..\FootStat.Data\FootStat.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
 ﻿using FootStat.Api.Models;
+using FootStat.Data.InMemory;
 using GraphQL;
 using GraphQL.Types;
 using Microsoft.AspNetCore.Mvc;
@@ -15,7 +16,7 @@ namespace FootStat.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] GraphQLQuery query)
         {
-            var schema = new Schema { Query = new CompetitionQuery() };
+            var schema = new Schema { Query = new CompetitionQuery(new CompetitionRepository()) };
 
             var result = await new DocumentExecuter().ExecuteAsync(_ =>
             {

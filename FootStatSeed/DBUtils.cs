@@ -12,7 +12,8 @@ namespace FootStatSeed
         public static SqlConnection GetDBConnection()
         {
             //string datasource = @"192.168.205.135\SQLEXPRESS";
-            string datasource = @"DESKTOP-E49BGJL\SQLEXPRESS";
+            //string datasource = @"DESKTOP-E49BGJL\SQLEXPRESS"; // HOME
+            string datasource = @"CGDLPTL02527\SQLEXPRESS";  // CEGID
 
             string database = "FootStatDb";
             string username = "";
